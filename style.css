@@ -1,0 +1,125 @@
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body styles */
+body {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Title styling */
+h1 {
+    text-align: center;
+    margin: 40px 0; /* Reduced margin to position it higher */
+    font-weight: 600;
+    font-size: 2em;
+}
+
+/* Form container */
+form {
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    justify-content: center; /* Centering the form elements */
+}
+
+/* Search input styling */
+form input {
+    flex: 1;
+    padding: 10px 15px; /* Initial padding */
+    border: none; /* No border */
+    background-color: #1e2124; /* Dark background for input */
+    color: #fff; /* White text for input */
+    font-size: 1rem;
+    outline: none;
+    transition: width 0.3s ease, padding 0.3s ease; /* Transition for hover effects */
+    border-radius: 25px 0 0 25px; /* Curved input with rounded left side */
+    height: 40px; /* Set height */
+    margin-right: 10px; /* Gap between input and button */
+}
+
+/* Enlarged search input on focus */
+form input:focus {
+    width: 250px; /* Expand width on focus */
+    padding: 10px; /* Maintain padding */
+    background-color: #333; /* Slightly lighter on focus */
+}
+
+/* Search button styling */
+form button {
+    padding: 10px 20px;
+    border: none; /* No border */
+    background-color: red; /* Red background for the button */
+    color: #fff; /* White text */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 0 25px 25px 0; /* Curved button with rounded right side */
+    height: 40px; /* Match the height of the input */
+}
+
+/* Button hover effect */
+form button:hover {
+    background-color: #ff4d4d; /* Lighter red on hover */
+    transform: scale(1.05);
+}
+
+/* Search results container */
+.search-result {
+    display: flex; /* Use flex to align images in a row */
+    flex-wrap: wrap; /* Allow images to wrap */
+    justify-content: center; /* Center the images */
+    margin-top: 20px;
+    width: 90%; /* Take 90% of the container */
+}
+
+/* Individual image container */
+.image-container {
+    margin: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Image styles */
+.image-container img {
+    width: 200px; /* Set a fixed width for images */
+    height: 200px; /* Fixed height for uniformity */
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+}
+
+/* Download icon */
+.download-icon {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    color: #ff4d4d; /* Match icon color with theme */
+}
+
+/* Show More button styles */
+.show-more-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none; /* No border */
+    background-color: red; /* Red background for the button */
+    color: #fff; /* White text */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 25px; /* Curved button */
+}
+
+.show-more-btn:hover {
+    background-color: #ff4d4d; /* Lighter red on hover */
+    transform: scale(1.05);
+}
